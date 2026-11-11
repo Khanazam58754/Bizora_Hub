@@ -1,76 +1,73 @@
 <!DOCTYPE html>
 <html lang="hi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bizora World - One Website Endless Possibilities</title>
+<title>Bizora World</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
-header{background:#1a0b3d;color:#fff;padding:14px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
-.logo{font-size:22px;font-weight:900;line-height:1.1}.logo small{display:block;font-size:11px;color:#c9b8ff;font-weight:400}
-.b{padding:8px 14px;border-radius:20px;border:1px solid #fff;background:transparent;color:#fff;cursor:pointer}
-.b2{background:#ffcc00;color:#000;border:none;font-weight:900}
-.hero{padding:25px 15px;text-align:center;background:#f8f7ff}
-.hero h1{font-size:32px;line-height:1.2}.hero p{color:#555;margin-top:8px}
-.pills{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:16px 0}
-.pills span{background:#1a0b3d;color:#fff;padding:9px 15px;border-radius:20px;cursor:pointer}
-.search{display:flex;background:#fff;border:1px solid #ddd;border-radius:30px;overflow:hidden;max-width:600px;margin:auto;box-shadow:0 2px 10px #ddd}
-.search input{flex:1;padding:13px;border:none;outline:none}
-.search button{background:#7b2ff7;color:#fff;border:none;padding:0 22px;font-weight:700;cursor:pointer}
-.sec{max-width:1100px;margin:auto;padding:22px 15px}.sec h2{text-align:center;font-size:26px}.sec p.sub{text-align:center;color:#666;margin:6px 0 15px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.card{background:#e9e6ff;border-radius:14px;padding:22px 10px;text-align:center;cursor:pointer}
-.card b{display:block;margin-top:8px;font-size:17px}.card small{color:#555}
-.detail{display:none;background:#fff;border:2px solid #7b2ff7;border-radius:14px;padding:20px;margin-top:15px}
-.box3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;text-align:center}
-.box3 div{background:#fff;border:1px solid #eee;border-radius:12px;padding:15px}
-.steps{background:#1a0b3d;color:#fff;border-radius:14px;padding:20px}
-.steps div{margin:12px 0}
-footer{background:#111;color:#fff;text-align:center;padding:25px 15px;margin-top:20px}
-footer a{color:#ffcc00;text-decoration:none}
-.wa{position:fixed;bottom:20px;right:15px;background:#25D366;color:#fff;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:700;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);justify-content:center;align-items:center;z-index:200}
-.modal div{background:#fff;padding:20px;border-radius:14px;width:90%;max-width:350px}
-.modal input{width:100%;padding:11px;margin:8px 0;border:1px solid #ddd;border-radius:8px}
-.modal button{width:100%;padding:12px;background:#1a0b3d;color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer}
-@media(max-width:600px){.box3{grid-template-columns:1fr}}
-</style></head>
-<body>
-<header><div class="logo">💎 Bizora World<small>One Platform Infinite Opportunities</small></div><div><button class="b" onclick="openModal('Login')">Login</button> <button class="b b2" onclick="openModal('Register Free')">Register Free</button></div></header>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}body{background:#f7f5ff}
+header{background:#1a0b3d;color:#fff;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
+.logo{font-size:22px;font-weight:900;line-height:1}.logo small{display:block;font-size:11px;color:#c9a6ff;font-weight:400;margin-top:3px}
+.b{padding:8px 14px;border-radius:20px;border:1px solid #fff;background:transparent;color:#fff;font-weight:800;cursor:pointer}.y{background:#ffcc00;color:#000;border:none}
+.hero{background:#fff;padding:0 0 20px;text-align:center}.hero img{width:100%;max-height:320px;object-fit:cover}.hero h1{font-size:32px;line-height:1.1;color:#1a0b3d;margin-top:12px;padding:0 10px}
+.pills{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin:14px 10px}.pills b{background:#1a0b3d;color:#fff;padding:7px 11px;border-radius:20px;font-size:12px;cursor:pointer}
+.search{display:flex;background:#fff;border:1px solid #ddd;border-radius:30px;overflow:hidden;max-width:600px;margin:auto;box-shadow:0 2px 10px rgba(0,0,0,.1)}.search input{flex:1;border:none;padding:13px;outline:none}.search button{background:#6a0fd3;color:#fff;border:none;padding:0 18px;font-weight:800;cursor:pointer}
+.sec{max-width:1100px;margin:auto;padding:20px 15px}.sec h2{text-align:center;font-size:24px}.sub{text-align:center;color:#666;font-size:13px;margin:6px 0 15px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:700px){.grid{grid-template-columns:repeat(5,1fr)}}
+.card{background:#e9e6ff;border-radius:14px;padding:16px;text-align:center;cursor:pointer}.card i{font-size:28px}.card b{display:block;margin-top:6px;font-size:13px}.card small{color:#555;font-size:11px}
+.detail{display:none;background:#fff;border:2px solid #6a0fd3;border-radius:14px;padding:20px;margin-top:15px}
+.worlds{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(min-width:700px){.worlds{grid-template-columns:repeat(3,1fr)}}
+.w{background:#fff;border-radius:14px;padding:14px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.06)}.w h3{font-size:15px}.w p{font-size:12px;color:#555;margin-top:4px}
+.biz{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(min-width:700px){.biz{grid-template-columns:repeat(4,1fr)}}
+.bz{background:#fff;border-radius:14px;overflow:hidden;cursor:pointer}.bz img{width:100%;height:110px;object-fit:cover}.bz div{padding:10px}.bz h4{font-size:14px}.bz p{font-size:12px;color:#666}
+.earn{background:#ffcc00;border-radius:14px;padding:18px;text-align:center}.earn button{background:#1a0b3d;color:#fff;border:none;padding:11px 22px;border-radius:20px;font-weight:900;margin-top:10px;cursor:pointer}
+.stats{background:#1a0b3d;color:#fff;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:16px;border-radius:14px;text-align:center;margin-top:12px}.stats b{font-size:18px}
+footer{background:#1e2a7a;color:#fff;text-align:center;padding:22px 15px}footer h2{font-size:24px}
+.wa{position:fixed;bottom:14px;right:14px;background:#25D366;color:#fff;padding:13px 16px;border-radius:30px;font-weight:900;text-decoration:none;z-index:99}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);justify-content:center;align-items:center;z-index:200}.modal div{background:#fff;padding:20px;border-radius:14px;width:90%;max-width:350px}.modal input{width:100%;padding:11px;margin:8px 0;border:1px solid #ddd;border-radius:8px}.modal button{width:100%;padding:12px;background:#1a0b3d;color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer}
+</style></head><body>
+<header><div class="logo">💎 Bizora World<small>One Platform Infinite Opportunities</small></div><div><button class="b" onclick="openModal('Login')">Login</button> <button class="b y" onclick="openModal('Register Free')">Register Free</button></div></header>
 
-<div class="hero"><h1>Bizora World<br>One Website - Endless Possibilities</h1><p>Business • Shopping • Jobs • Learning • Earning • AI Tools - Sab Ek Jagah</p>
-<div class="pills"><span onclick="show('Business')">💼 Business</span><span onclick="show('Shopping')">🛒 Shopping</span><span onclick="show('Jobs')">💻 Jobs</span><span onclick="show('Learning')">🎓 Learning</span><span onclick="show('Earning')">💰 Earning</span><span onclick="show('AI Tools')">🤖 AI Tools</span></div>
-<div class="search"><input id="q" placeholder="Search for businesses, services, jobs..."><button onclick="doSearch()">Search</button></div>
-<p style="margin-top:12px">📞 Call / WhatsApp: <b>9528825250</b></p></div>
+<div class="hero"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1000"><h1>Bizora World<br>One Website - Endless Possibilities</h1>
+<div class="pills"><b onclick="show('Business')">💼 Business</b><b onclick="show('Shopping')">🛒 Shopping</b><b onclick="show('Jobs')">💻 Jobs</b><b onclick="show('Learning')">🎓 Learning</b><b onclick="show('Earning')">💰 Earning</b><b onclick="show('AI Tools')">🤖 AI Tools</b></div>
+<div class="search"><input id="s" placeholder="Search for businesses, services, jobs, courses, products..."><button onclick="doSearch()">Search</button></div></div>
 
-<div class="sec"><h2>Our All-In-One Services</h2><p class="sub">Everything you need - all in one platform</p>
+<div class="sec"><h2>Our All-In-One Services</h2><p class="sub">Everything you need for business, learning, earning and growth - all in one platform</p>
 <div class="grid">
-<div class="card" onclick="show('Business Hub')">🏢<b>Business Hub</b><small>Apna Business Badhao</small></div>
-<div class="card" onclick="show('Earn Hub')">💰<b>Earn Hub</b><small>Ghar Baithe Kamao</small></div>
-<div class="card" onclick="show('AI Hub')">🤖<b>AI Hub</b><small>AI Tools Free Me</small></div>
-<div class="card" onclick="show('Buy & Sell')">🛒<b>Buy & Sell</b><small>Sasta Khareedo Becho</small></div>
-<div class="card" onclick="show('Jobs')">💼<b>Jobs</b><small>Nayi Naukri Pao</small></div>
-<div class="card" onclick="show('Learning')">🎓<b>Learning</b><small>Skill Seekho</small></div>
-</div>
-<div id="box" class="detail"></div></div>
+<div class="card" onclick="show('Business Hub')"><i>🏢</i><b>Business Hub</b><small>Business Badhao</small></div>
+<div class="card" onclick="show('Earn Hub')"><i>💰</i><b>Earn Hub</b><small>Ghar Baithe Kamao</small></div>
+<div class="card" onclick="show('AI Hub')"><i>🤖</i><b>AI Hub</b><small>AI Tools Free</small></div>
+<div class="card" onclick="show('Buy & Sell')"><i>🛒</i><b>Buy & Sell</b><small>Sasta Becho</small></div>
+<div class="card" onclick="show('Job Hub')"><i>💼</i><b>Job Hub</b><small>Nayi Naukri</small></div>
+<div class="card" onclick="show('Help Hub')"><i>🎧</i><b>Help Hub</b><small>Madad Chahiye?</small></div>
+<div class="card" onclick="show('Learning Hub')"><i>🎓</i><b>Learning Hub</b><small>Skill Seekho</small></div>
+<div class="card" onclick="show('Creator Hub')"><i>📸</i><b>Creator Hub</b><small>Video Banao</small></div>
+<div class="card" onclick="show('Partner Hub')"><i>🤝</i><b>Partner Hub</b><small>Partner Bano</small></div>
+<div class="card" onclick="show('Global Hub')"><i>🌍</i><b>Global Hub</b><small>Duniya Se Judo</small></div>
+</div><div id="box" class="detail"></div></div>
 
-<div class="sec"><h2>Why Bizora World?</h2><p class="sub">Lakho log kyu Bizora ko chun rahe hai</p><div class="box3"><div>⚡<br><b>Fast & Easy</b><br><small>2 Minute me Register</small></div><div>💯<br><b>100% Free</b><br><small>Joining Free Hai</small></div><div>🤝<br><b>Trusted</b><br><small>Azam Bhai ka Bharosa</small></div></div></div>
-
-<div class="sec"><div class="steps"><h2 style="text-align:left">Kaise Kaam Karega? - 3 Step</h2><div><b>1. Register Karo</b> - Upar Register Free dabao</div><div><b>2. Service Chuno</b> - Business, Jobs, Earning me se chuno</div><div><b>3. WhatsApp Karo - 9528825250</b> - Azam Bhai se baat karo aur shuru karo</div><button onclick="openModal('Register Free')" style="background:#ffcc00;color:#000;border:none;padding:12px 20px;border-radius:20px;font-weight:900;cursor:pointer;margin-top:10px">Abhi Join Karo - FREE</button></div></div>
-
-<div class="sec"><h2>Trending Services</h2><p class="sub">Sabse zyada log ye le rahe hai</p><div class="grid">
-<div class="card" onclick="show('Digital Business')">📱<b>Digital Business</b></div>
-<div class="card" onclick="show('Online Earning')">💸<b>Online Earning</b></div>
-<div class="card" onclick="show('AI Photo & Video')">🎬<b>AI Photo & Video</b></div>
-<div class="card" onclick="show('Website Banwao')">🌐<b>Website Banwao</b></div>
+<div class="sec"><h2>Explore Bizora Worlds</h2><p class="sub">Discover the different worlds inside Bizora</p><div class="worlds">
+<div class="w" onclick="show('Business World')"><h3>🏢 Business World</h3><p>Business profiles, product listings, suppliers, buyers aur business enquiries.</p></div>
+<div class="w" onclick="show('AI World')"><h3>🤖 AI World</h3><p>AI writing, image ideas, business planning aur content creation tools.</p></div>
+<div class="w" onclick="show('Work & Jobs World')"><h3>💼 Work & Jobs World</h3><p>Jobs, freelance projects, skill profiles aur service providers.</p></div>
+<div class="w" onclick="show('Shopping World')"><h3>🛒 Shopping World</h3><p>Products, online stores, price comparison aur seller catalogues.</p></div>
+<div class="w" onclick="show('Learning World')"><h3>🎓 Learning World</h3><p>Courses, tutorials, language learning aur skill development.</p></div>
+<div class="w" onclick="show('Creator & Community World')"><h3>🎬 Creator & Community World</h3><p>Videos, stories, creator profiles, groups aur discussions.</p></div>
+<div class="w" onclick="show('Services & Help World')"><h3>🛠️ Services & Help World</h3><p>Repair, design, delivery, local services aur useful resources.</p></div>
 </div></div>
 
-<footer><h3>💎 Bizora World</h3><p>Owner: Azam Khan | Aligarh, UP</p><p>📞 <a href="https://wa.me/919528825250">9528825250</a> | WhatsApp par Baat Karein</p><br><p>© 2026 Bizora World - All Rights Reserved</p></footer>
+<div class="sec"><h2>⭐ Featured Businesses</h2><div class="biz">
+<div class="bz" onclick="show('Fashion World')"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500"><div><h4>Fashion World</h4><p>4.8 ★ • 1.2K+ Stores • Fashion</p></div></div>
+<div class="bz" onclick="show('Tech Store')"><img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=500"><div><h4>Tech Store</h4><p>4.7 ★ • 950+ Stores • Electronics</p></div></div>
+<div class="bz" onclick="show('Home Decor')"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500"><div><h4>Home Decor</h4><p>4.6 ★ • 800+ Stores • Home</p></div></div>
+<div class="bz" onclick="show('Food Junction')"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500"><div><h4>Food Junction</h4><p>4.9 ★ • 2.1K+ Restaurants • Food</p></div></div>
+</div></div>
 
-<a class="wa" href="https://wa.me/919528825250?text=Hi Bizora, mujhe business karna hai - Azam Bhai" target="_blank">💬 WhatsApp</a>
-
-<div id="m" class="modal" onclick="this.style.display='none'"><div onclick="event.stopPropagation()"><h3 id="mt">Login</h3><input placeholder="Apna Naam"><input placeholder="Mobile Number"><input placeholder="Password" type="password"><button onclick="alert('Welcome to Bizora World! Azam Bhai aapko jald call karenge - 9528825250');document.getElementById('m').style.display='none'">Continue</button><p style="text-align:center;margin-top:10px">Ya WhatsApp karein: <a href="https://wa.me/919528825250">9528825250</a></p><p onclick="document.getElementById('m').style.display='none'" style="text-align:center;margin-top:10px;color:red;cursor:pointer">Close</p></div></div>
-
+<div class="sec"><div class="earn"><h2>🚀 Start Earning Today!</h2><p>Join our earning program and monetize your skills, content, and business.</p><button onclick="openModal('Join Earning - FREE')">Join Now →</button></div><div class="stats"><div><b>10M+</b><br>Users</div><div><b>5M+</b><br>Businesses</div><div><b>200+</b><br>Countries</div></div></div>
+<div class="sec"><h2>💡 Why Choose Bizora World?</h2><p class="sub">✅ All-in-One • ✅ 100% Free • ✅ AI Tools • ✅ Global • ✅ Earn • ✅ Trusted<br>Owner: Malik Azam - Aligarh | 📞 9528825250</p></div>
+<footer><h2>💎 Bizora World</h2><p>Dream Big... Grow Bigger...<br>Connect • Create • Trade • Learn • Grow<br>© 2026 Bizora World - Founder: Malik Azam, Aligarh</p></footer>
+<a class="wa" href="https://wa.me/919528825250?text=Hi Azam Bhai, Mujhe Bizora World me Business Add Karna Hai" target="_blank">💬 WhatsApp</a>
+<div id="m" class="modal" onclick="this.style.display='none'"><div onclick="event.stopPropagation()"><h3 id="mt">Login</h3><input placeholder="Apna Naam"><input placeholder="Mobile Number"><input placeholder="Password" type="password"><button onclick="alert('Welcome to Bizora World! Azam Bhai aapko jald call karenge - 9528825250');document.getElementById('m').style.display='none'">Continue</button><p style="text-align:center;margin-top:10px">Ya WhatsApp: <a href="https://wa.me/919528825250">9528825250</a></p><p onclick="document.getElementById('m').style.display='none'" style="text-align:center;margin-top:10px;color:red;cursor:pointer">Close</p></div></div>
 <script>
 function show(n){let b=document.getElementById('box');b.style.display='block';b.innerHTML='<h3>'+n+'</h3><p>Welcome to '+n+'! Yahan aapko '+n+' ki sabhi services milengi. Azam Bhai se baat karne ke liye neeche dabao.</p><br><p><b>Call: 9528825250</b></p><br><a href="https://wa.me/919528825250?text=Hi, mujhe '+n+' me interest hai" style="background:#25D366;color:#fff;padding:11px 18px;border-radius:20px;text-decoration:none;display:inline-block">WhatsApp - 9528825250</a>';b.scrollIntoView({behavior:'smooth'});}
 function openModal(t){document.getElementById('mt').innerText=t;document.getElementById('m').style.display='flex';}
-function doSearch(){let v=document.getElementById('q').value;if(!v){alert('Kuch likho - jaise Business, Jobs');return;}show('Search Result: '+v);}
+function doSearch(){let v=document.getElementById('s').value;if(!v){alert('Kuch likho - jaise Business, Jobs');return;}show('Search Result: '+v);}
 </script>
 </body></html>
