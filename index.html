@@ -1,81 +1,60 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bizora Hub - Apna Business Hub</title>
+<html lang="hi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bizora World - One Website Endless Possibilities</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
-body{background:#0f0f1a;color:#fff}
-header{background:#1a1a2e;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-.logo{font-size:24px;font-weight:900;color:#ffcc00}
-.logo span{color:#fff}
-nav a{color:#fff;text-decoration:none;margin-left:15px;font-weight:600;font-size:14px}
-.hero{text-align:center;padding:50px 20px;background:linear-gradient(135deg,#ff6b00,#ffcc00,#ff0066);color:#fff}
-.hero h1{font-size:38px;line-height:1.2}
-.hero p{margin:15px 0;font-size:16px;opacity:.9}
-.btn{display:inline-block;background:#fff;color:#000;padding:13px 28px;border-radius:30px;font-weight:800;text-decoration:none;margin:5px}
-.btn2{background:#000;color:#fff}
-.cat{display:flex;gap:10px;overflow-x:auto;padding:15px}
-.cat button{background:#222;border:1px solid #444;color:#fff;padding:10px 18px;border-radius:20px;white-space:nowrap}
-.products{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:15px}
-.card{background:#1e1e30;border-radius:15px;overflow:hidden;padding-bottom:12px;text-align:center}
-.card img{width:100%;height:150px;object-fit:cover}
-.card h3{font-size:15px;margin:10px 5px}
-.price{color:#ffcc00;font-weight:800;font-size:18px}
-.old{text-decoration:line-through;color:#aaa;font-size:13px}
-.order{background:#25D366;color:#fff;border:none;padding:10px 20px;border-radius:20px;font-weight:700;margin-top:8px}
-.banner{background:#ffcc00;color:#000;text-align:center;padding:15px;font-weight:800;margin:15px;border-radius:12px}
-.features{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:15px;text-align:center}
-.features div{background:#1e1e30;padding:15px;border-radius:12px;font-size:13px}
-footer{background:#000;text-align:center;padding:25px;font-size:13px;color:#aaa}
-.wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none}
-</style>
-</head>
-<body>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}body{background:#f7f5ff}
+header{background:#1a0b3d;color:#fff;padding:12px 14px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:900}.logo small{display:block;font-size:11px;color:#c9a6ff;font-weight:400}
+.b{padding:8px 14px;border-radius:20px;border:1px solid #fff;background:transparent;color:#fff;font-weight:800}.y{background:#ffcc00;color:#000;border:none}
+.hero{background:#fff;padding:25px 15px;text-align:center}.hero h1{font-size:34px;line-height:1.1;color:#1a0b3d}.hero h1 span{color:#111}
+.pills{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin:12px 0}.pills b{background:#1a0b3d;color:#fff;padding:6px 10px;border-radius:20px;font-size:12px}
+.search{display:flex;background:#fff;border:1px solid #ddd;border-radius:30px;overflow:hidden;max-width:600px;margin:auto;box-shadow:0 2px 10px rgba(0,0,0,.1)}.search input{flex:1;border:none;padding:13px;outline:none}.search button{background:#6a0fd3;color:#fff;border:none;padding:0 18px;font-weight:800}
+.sec{max-width:1100px;margin:auto;padding:20px 15px}.sec h2{text-align:center;font-size:24px}.sec p{text-align:center;color:#666;font-size:13px;margin:6px 0 15px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:700px){.grid{grid-template-columns:repeat(5,1fr)}}
+.card{background:#e9e6ff;border-radius:14px;padding:16px;text-align:center}.card i{font-size:28px}.card b{display:block;margin-top:6px;font-size:13px}
+.worlds{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(min-width:700px){.worlds{grid-template-columns:repeat(3,1fr)}}
+.w{background:#fff;border-radius:14px;padding:14px;box-shadow:0 2px 10px rgba(0,0,0,.06)}.w h3{font-size:15px}.w p{font-size:12px;color:#555;text-align:left;margin-top:4px}
+.biz{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(min-width:700px){.biz{grid-template-columns:repeat(4,1fr)}}
+.bz{background:#fff;border-radius:14px;overflow:hidden}.bz img{width:100%;height:110px;object-fit:cover}.bz div{padding:10px}.bz h4{font-size:14px}.bz p{font-size:12px;color:#666;text-align:left}
+.earn{background:#ffcc00;border-radius:14px;padding:18px;text-align:center}.earn button{background:#1a0b3d;color:#fff;border:none;padding:11px 22px;border-radius:20px;font-weight:900;margin-top:10px}
+.stats{background:#1a0b3d;color:#fff;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:16px;border-radius:14px;text-align:center;margin-top:12px}.stats b{font-size:18px}
+footer{background:#1e2a7a;color:#fff;text-align:center;padding:22px 15px}footer h2{font-size:24px}
+.wa{position:fixed;bottom:14px;right:14px;background:#25D366;color:#fff;padding:13px 16px;border-radius:30px;font-weight:900;text-decoration:none;z-index:99}
+</style></head><body>
+<header><div class="logo">💎 Bizora World<small>One Platform Infinite Opportunities</small></div><div><button class="b">Login</button> <button class="b y">Register Free</button></div></header>
+<div class="hero"><h1>Bizora World<br><span>One Website - Endless Possibilities</span></h1>
+<div class="pills"><b>💼 Business</b><b>🛒 Shopping</b><b>💻 Jobs</b><b>🎓 Learning</b><b>💰 Earning</b><b>🤖 AI Tools</b></div>
+<div class="search"><input id="s" placeholder="Search for businesses, services, jobs, courses, products..."><button onclick="alert('Searching: '+document.getElementById('s').value)">Search</button></div></div>
 
-<header><div class="logo">BIZORA <span>HUB</span></div><nav><a href="#">Home</a><a href="#">Shop</a><a href="#">Contact</a></nav></header>
+<div class="sec"><h2>Our All-In-One Services</h2><p>Everything you need for business, learning, earning and growth - all in one platform</p>
+<div class="grid">
+<div class="card"><i>🏢</i><b>Business Hub</b></div><div class="card"><i>💰</i><b>Earn Hub</b></div><div class="card"><i>🤖</i><b>AI Hub</b></div><div class="card"><i>🛒</i><b>Buy & Sell</b></div><div class="card"><i>💼</i><b>Job Hub</b></div>
+<div class="card"><i>🎧</i><b>Help Hub</b></div><div class="card"><i>🎓</i><b>Learning Hub</b></div><div class="card"><i>📸</i><b>Creator Hub</b></div><div class="card"><i>🤝</i><b>Partner Hub</b></div><div class="card"><i>🌍</i><b>Global Hub</b></div>
+</div></div>
 
-<div class="hero">
-<h1>Apna Business Hub<br>Ab Sab Kuch Ek Jagah!</h1>
-<p>Best Products • Best Price • Fast Delivery • All India</p>
-<a class="btn" href="#shop">🛍️ Abhi Shopping Karo</a>
-<a class="btn btn2" href="https://wa.me/919999999999">WhatsApp Karo</a>
-</div>
+<div class="sec"><h2>Explore Bizora Worlds</h2><p>Discover the different worlds inside Bizora</p>
+<div class="worlds">
+<div class="w"><h3>🏢 Business World</h3><p>Business profiles, product listings, suppliers, buyers aur business enquiries.</p></div>
+<div class="w"><h3>🤖 AI World</h3><p>AI writing, image ideas, business planning aur content creation tools.</p></div>
+<div class="w"><h3>💼 Work & Jobs World</h3><p>Jobs, freelance projects, skill profiles aur service providers.</p></div>
+<div class="w"><h3>🛒 Shopping World</h3><p>Products, online stores, price comparison aur seller catalogues.</p></div>
+<div class="w"><h3>🎓 Learning World</h3><p>Courses, tutorials, language learning aur skill development.</p></div>
+<div class="w"><h3>🎬 Creator & Community World</h3><p>Videos, stories, creator profiles, groups aur discussions.</p></div>
+<div class="w"><h3>🛠️ Services & Help World</h3><p>Repair, design, delivery, local services aur useful resources.</p></div>
+</div></div>
 
-<div class="cat">
-<button>🔥 All</button><button>👕 Fashion</button><button>⌚ Watch</button><button>👟 Shoes</button><button>🎧 Earphone</button><button>💄 Beauty</button>
-</div>
+<div class="sec"><h2>⭐ Featured Businesses</h2><div class="biz">
+<div class="bz"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500"><div><h4>Fashion World</h4><p>4.8 ★ • 1.2K+ Stores • Fashion</p></div></div>
+<div class="bz"><img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=500"><div><h4>Tech Store</h4><p>4.7 ★ • 950+ Stores • Electronics</p></div></div>
+<div class="bz"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500"><div><h4>Home Decor</h4><p>4.6 ★ • 800+ Stores • Home</p></div></div>
+<div class="bz"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500"><div><h4>Food Junction</h4><p>4.9 ★ • 2.1K+ Restaurants • Food</p></div></div>
+</div></div>
 
-<div class="banner">🎉 DIWALI OFFER - 50% OFF + FREE DELIVERY - Aaj Hi Order Karo!</div>
+<div class="sec"><div class="earn"><h2>🚀 Start Earning Today!</h2><p>Join our earning program and monetize your skills, content, and business.</p><button onclick="alert('Welcome to Bizora World Earning! Contact Malik Azam - 9528825250')">Join Now →</button></div>
+<div class="stats"><div><b>10M+</b><br>Users</div><div><b>5M+</b><br>Businesses</div><div><b>200+</b><br>Countries</div></div></div>
 
-<div class="products" id="shop">
-<div class="card"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"><h3>Premium Smart Watch</h3><div><span class="price">₹999</span> <span class="old">₹1999</span></div><button class="order" onclick="order('Smart Watch')">Order Now</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"><h3>Wireless Headphone Pro</h3><div><span class="price">₹799</span> <span class="old">₹1499</span></div><button class="order" onclick="order('Headphone')">Order Now</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"><h3>Stylish Sports Shoes</h3><div><span class="price">₹1299</span> <span class="old">₹2499</span></div><button class="order" onclick="order('Shoes')">Order Now</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=500"><h3>Premium T-Shirt Combo</h3><div><span class="price">₹599</span> <span class="old">₹999</span></div><button class="order" onclick="order('T-Shirt')">Order Now</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500"><h3>Stylish Sunglasses</h3><div><span class="price">₹499</span> <span class="old">₹899</span></div><button class="order" onclick="order('Sunglasses')">Order Now</button></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500"><h3>Trendy Sneakers</h3><div><span class="price">₹1499</span> <span class="old">₹2999</span></div><button class="order" onclick="order('Sneakers')">Order Now</button></div>
-</div>
+<div class="sec"><h2>💡 Why Choose Bizora World?</h2><p>✅ All-in-One Platform • ✅ 100% Free To Join • ✅ AI Powered Tools • ✅ Global Community • ✅ Earn Opportunities • ✅ Secure & Trusted</p></div>
 
-<div class="features">
-<div>🚚<br><b>Fast Delivery</b><br>All India</div>
-<div>💯<br><b>100% Original</b><br>Quality Check</div>
-<div>💸<br><b>Cash On Delivery</b><br>Available</div>
-</div>
-
-<footer>
-<h2 style="color:#ffcc00">BIZORA HUB</h2>
-<p>Aligarh, Uttar Pradesh, India</p>
-<p>WhatsApp: +91 99999 99999</p>
-<br><p>© 2026 Bizora Hub - Made by Azam Bhai 👑</p>
-</footer>
-
-<a class="wa" href="https://wa.me/919999999999">💬</a>
-
-<script>
-function order(p){ window.open("https://wa.me/919999999999?text=Hi Bizora Hub! Mujhe "+p+" order karna hai"); }
-</script>
-</body>
-</html>
+<footer><h2>💎 Bizora World</h2><p>Dream Big... Grow Bigger...<br>Connect • Create • Trade • Learn • Grow<br>© 2026 Bizora World - Founder: Malik Azam, Aligarh</p></footer>
+<a class="wa" href="https://wa.me/919528825250?text=Hi Azam Bhai, Mujhe Bizora World me Business Add Karna Hai">💬 WhatsApp</a>
+</body></html>
